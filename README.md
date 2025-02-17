@@ -2,11 +2,11 @@
 
 [![itinarybanner.png](https://i.postimg.cc/X7C5zBt9/itinarybanner.png)](https://postimg.cc/Vdz5SvfN)
 
-[![GitHub stars](https://img.shields.io/github/stars/Anshkabra2012/Itinerary?style=for-the-badge)](https://github.com/Anshkabra2012/Itinerary/stargazers)
-[![GitHub forks](https://img.shields.io/github/forks/Anshkabra2012/Itinerary?style=for-the-badge)](https://github.com/Anshkabra2012/Itinerary/network)
+[![GitHub stars](https://img.shields.io/github/stars/Anshkabra2012/Itinerary?style=square)](https://github.com/Anshkabra2012/Itinerary/stargazers)
+[![GitHub forks](https://img.shields.io/github/forks/Anshkabra2012/Itinerary?style=sqaure)](https://github.com/Anshkabra2012/Itinerary/network)
 [![GitHub issues](https://img.shields.io/github/issues/Anshkabra2012/Itinerary?style=square)](https://github.com/Anshkabra2012/Itinerary/issues)
-[![License](https://img.shields.io/github/license/Anshkabra2012/Itinerary?style=for-the-badge)](LICENSE)
-[![Donate](https://img.shields.io/badge/Donate-PayPal-green?style=for-the-badge&logo=paypal)](https://paypal.me/anshkabra)
+[![License](https://img.shields.io/github/license/Anshkabra2012/Itinerary?style=square)](LICENSE)
+[![Donate](https://img.shields.io/badge/Donate-PayPal-green?style=sqaure&logo=paypal)](https://paypal.me/anshkabra)
 
 ## Table of Contents
 
