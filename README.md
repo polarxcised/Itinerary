@@ -14,9 +14,6 @@
 - [Features](#features)
 - [Screenshots](#screenshots)
 - [Installation](#installation)
-- [Usage](#usage)
-- [Navigation Menu](#navigation-menu)
-- [Contributing](#contributing)
 - [License](#license)
 - [Contact](#contact)
 
@@ -43,6 +40,9 @@ Below are some screenshots of the application (replace with your actual images):
 *Itinerary Planner Section*
 [![Screenshot-2025-02-17-222439.png](https://i.postimg.cc/sxvb5DfW/Screenshot-2025-02-17-222439.png)](https://postimg.cc/1V1WQSqR)
 
+## Contact
+
+*Please Contact anshkabra2012 on discord or kabra.ansh@gmail.com*
 
 ## Installation
 
