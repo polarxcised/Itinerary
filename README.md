@@ -4,7 +4,7 @@
 
 [![GitHub stars](https://img.shields.io/github/stars/Anshkabra2012/Itinerary?style=for-the-badge)](https://github.com/Anshkabra2012/Itinerary/stargazers)
 [![GitHub forks](https://img.shields.io/github/forks/Anshkabra2012/Itinerary?style=for-the-badge)](https://github.com/Anshkabra2012/Itinerary/network)
-[![GitHub issues](https://img.shields.io/github/issues/Anshkabra2012/Itinerary?style=for-the-badge)](https://github.com/Anshkabra2012/Itinerary/issues)
+[![GitHub issues](https://img.shields.io/github/issues/Anshkabra2012/Itinerary?style=square)](https://github.com/Anshkabra2012/Itinerary/issues)
 [![License](https://img.shields.io/github/license/Anshkabra2012/Itinerary?style=for-the-badge)](LICENSE)
 [![Donate](https://img.shields.io/badge/Donate-PayPal-green?style=for-the-badge&logo=paypal)](https://paypal.me/anshkabra)
 
