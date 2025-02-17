@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Itinerary - Your AI Travel Planner</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Itinerary transforms your travel ideas into actionable itineraries with pricing breakdowns, real-time updates, beautiful graphs, and detailed planning. Download your plan as an Excel file with charts." />
+
+  <!-- Favicons -->
+  <link rel="apple-touch-icon" sizes="180x180" href="../favicons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="../favicons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../favicons/favicon-16x16.png">
+  <link rel="manifest" href="../favicons/site.webmanifest">
+  <link rel="shortcut icon" href="../favicons/favicon.ico" type="image/x-icon">
+
+  <!-- Font Awesome (analytics disabled) -->
+  <script src="https://kit.fontawesome.com/e328bff894.js?analytics=0" crossorigin="anonymous" data-analytics="0"></script>
+
+  <!-- External Libraries (if needed for other functionality) -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/marked/4.0.0/marked.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/typewriter-effect@latest/dist/core.js"></script>
+  <!-- ... other external libraries as needed ... -->
+
+  <!-- External CSS -->
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+  <!-- Header -->
+  <header class="header animate-fadeIn">
+    <a class="headertitle" href="javascript:void(0)"><i class="fas fa-route"></i> Itinerary</a>
+    <nav class="nav-links">
+      <a href="javascript:void(0)" onclick="scrollToSection('planner')">
+        <i class="fas fa-map-signs"></i> Plan Your Trip
+      </a>
+      <a href="javascript:void(0)" onclick="scrollToSection('features')">
+        <i class="fas fa-star"></i> Features
+      </a>
+      <a href="javascript:void(0)" onclick="scrollToSection('donate')">
+        <i class="fas fa-hand-holding-heart"></i> Donate
+      </a>
+    </nav>
+  </header>
+
+  <!-- Vector Background -->
+  <div class="vector"></div>
+
+  <!-- Main Landing Content -->
+  <main class="main animate-fadeIn">
+    <h1><i class="fas fa-suitcase-rolling"></i> Itinerary</h1>
+    <h2 id="typewriter"><i class="fas fa-magic"></i> Your AI Travel Planner</h2>
+    <div class="topbuttons">
+      <button class="btn" onclick="scrollToSection('planner')">
+        <i class="fas fa-arrow-right"></i> Start Planning
+      </button>
+      <button class="btn" onclick="scrollToSection('features')">
+        <i class="fas fa-info-circle"></i> Learn More
+      </button>
+    </div>
+    <div class="scroll-down" onclick="scrollToSection('features')">
+      <i class="fas fa-angle-down"></i>
+    </div>
+  </main>
+
+  <!-- Features Section -->
+  <section id="features" class="animate-slideIn" data-aos="fade-up">
+    <h2><i class="fas fa-cogs"></i> Features</h2>
+    <p>
+      <strong><i class="fas fa-magic"></i> AI Itinerary Generation:</strong> Enter your travel details and let our AI generate a detailed itinerary with dates, times, locations, activities, and a price breakdown.<br><br>
+      <strong><i class="fas fa-file-excel"></i> Excel Download with Graphs:</strong> Export your final itinerary as an Excel file complete with a beautifully calculated price breakdown chart (the chart is calculated and embedded only in Excel).<br><br>
+      <strong><i class="fas fa-dollar-sign"></i> Price Breakdown:</strong> Get a detailed pricing breakdown for accommodations, transportation, food, and activities.<br><br>
+      <strong><i class="fas fa-microphone"></i> Voice Input:</strong> Use voice commands to input your travel plans.<br><br>
+      <strong><i class="fas fa-image"></i> Visual Inspiration:</strong> Upload images to inspire your travel route and experiences.
+    </p>
+    <ul>
+      <li><strong><i class="fas fa-cloud-sun"></i> Real-Time Weather Updates</strong></li>
+      <li><strong><i class="fas fa-calendar-alt"></i> Local Events Finder</strong></li>
+      <li><strong><i class="fas fa-wallet"></i> Budget Tracker</strong></li>
+      <li><strong><i class="fas fa-map"></i> Interactive Map Integration</strong></li>
+      <li><strong><i class="fas fa-th-list"></i> Customizable Templates</strong></li>
+    </ul>
+  </section>
+
+  <!-- Itinerary Planner Section -->
+  <section id="planner" class="animate-fadeIn" data-aos="fade-up">
+    <h2><i class="fas fa-edit"></i> Plan Your Trip</h2>
+    <p><i class="fas fa-pencil-alt"></i> Enter your travel details and ideas below (include desired locations, activities, and budget):</p>
+    <textarea id="itinerary-input" placeholder="e.g., Planning a 7-day trip across Europe: Visit Paris, Rome, and Berlin with guided tours, local cuisine, and budget-friendly accommodations."></textarea>
+    <br>
+    <button id="generate-btn" class="btn"><i class="fas fa-cog"></i> Generate Itinerary</button>
+    <div id="plan-box"></div>
+    <button id="download-btn" class="btn" onclick="downloadExcel()"><i class="fas fa-chart-pie"></i> Download as Excel</button>
+  </section>
+
+  <!-- Donation Section -->
+  <section id="donate" class="animate-fadeIn" data-aos="fade-up">
+    <h2><i class="fas fa-donate"></i> Support Us</h2>
+    <p>If you appreciate our service and our constant drive to add new features, please consider donating. Your support helps us continue improving the platform.</p>
+    <button class="btn" id="donate-btn" onclick="donate()">
+      <i class="fas fa-donate"></i> Donate via PayPal
+    </button>
+  </section>
+
+  <!-- Hidden Canvas for Chart (used only for Excel export) -->
+  <canvas id="priceChart" width="500" height="300"></canvas>
+
+  <!-- Footer -->
+  <footer class="footer animate-fadeIn" data-aos="fade-up">
+    <p>© 2025 Itinerary. All rights reserved.</p>
+    <div class="footer-icons">
+      <a href="https://discord.gg/uTQWQNmTAy" target="_blank" title="Discord">
+        <i class="fab fa-discord"></i>
+      </a>
+      <a href="https://tiktok.com/@yourhandle" target="_blank" title="TikTok">
+        <i class="fab fa-tiktok"></i>
+      </a>
+      <a href="https://github.com/yourrepo" target="_blank" title="GitHub">
+        <i class="fab fa-github"></i>
+      </a>
+      <a href="https://x.com/yourhandle" target="_blank" title="Twitter">
+        <i class="fab fa-twitter"></i>
+      </a>
+    </div>
+  </footer>
+
+  <!-- Inline Script for basic functions -->
+  <script src="../js/main.js"></script>
+</body>
+</html>
