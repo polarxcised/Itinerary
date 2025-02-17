@@ -8,6 +8,8 @@
 [![License](https://img.shields.io/github/license/Anshkabra2012/Itinerary?style=square)](LICENSE)
 [![Donate](https://img.shields.io/badge/Donate-PayPal-green?style=sqaure&logo=paypal)](https://paypal.me/anshkabra)
 
+**Itinerary** is an AI-powered travel planner that transforms your travel ideas into detailed, actionable itineraries. With features like dynamic itinerary generation, comprehensive cost breakdowns, and Excel export with embedded charts, planning your next adventure has never been easier. Enjoy voice input, real-time weather updates, and more—all designed to help you travel with confidence.
+
 ## Table of Contents
 
 - [Overview](#overview)
