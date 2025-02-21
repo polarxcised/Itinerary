@@ -35,6 +35,8 @@
       <a href="javascript:void(0)" onclick="scrollToSection('features')">
         <i class="fas fa-star"></i> Features
       </a>
+    </nav>
+  </header>
 
   <!-- Vector Background -->
   <div class="vector"></div>
@@ -82,7 +84,6 @@
     <button id="download-btn" class="btn" onclick="downloadExcel()"><i class="fas fa-chart-pie"></i> Download as Excel</button>
   </section>
 
-
   <!-- Hidden Canvas for Chart (used only for Excel export) -->
   <canvas id="priceChart" width="500" height="300"></canvas>
 
@@ -107,5 +108,14 @@
 
   <!-- Inline Script for basic functions -->
   <script src="../js/main.js"></script>
+  <!-- Added scroll function to enable smooth scrolling behavior -->
+  <script>
+    function scrollToSection(sectionId) {
+      var section = document.getElementById(sectionId);
+      if (section) {
+        section.scrollIntoView({ behavior: 'smooth' });
+      }
+    }
+  </script>
 </body>
 </html>
