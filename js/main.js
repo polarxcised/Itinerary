@@ -194,7 +194,7 @@ document.addEventListener("DOMContentLoaded", () => {
       cancelButtonText: 'No, thanks'
     }).then((result) => {
       if (result.isConfirmed) {
-        window.open("https://paypal.me/anshkabra", "_blank");
+        window.prompt("It is fine, no need to!");
       }
     });
   }
