@@ -43,7 +43,7 @@ Below are some screenshots of the application (replace with your actual images):
 
 ## Contact
 
-*Please Contact anshkabra2012 on discord or kabra.ansh@gmail.com*
+*Please Contact polarxcised on discord or kabra.ansh@gmail.com*
 
 ## Installation
 
